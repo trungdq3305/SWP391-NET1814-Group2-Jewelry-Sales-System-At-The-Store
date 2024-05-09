@@ -1,1 +1,66 @@
-Datebase
+Account
+AccountID (PK)
+Username
+Password
+Role
+ 
+User
+        	UserID        	(PK)
+        	AccountID  	(FK)
+        	Fullname
+        	Email
+        	PhoneNumber
+        	Yob
+        	Address
+ 
+Product
+        	ProductID    	(PK)
+WarrantyID 	(FK)
+        	ProductName
+Type
+Category
+Product
+Weight
+Color
+Purity
+Description
+ 
+Price
+        	ProductID    	(FK)
+        	PriceTypeID	(FK)
+        	
+ 
+PriceType    	
+        	PriceTypeID	(PK)
+        	PriceName
+PriceNumber
+        	
+Waranty
+        	WarrantyID 	(PK)
+        	ManufacturedDay
+        	ExpiredDay
+        	
+Promotion
+        	PromotionID   (PK)
+ManufacturedDay
+        	ExpiredDay
+        	Type
+        	
+ 
+Customer
+        	CustomerID 	(PK)
+        	CustomerName
+        	YOB
+        	Address
+        	PhoneNumber
+        	MembershipID
+ 
+ 
+ 
+ 
+ 
+Cashier
+CashierID    	
+        	UserID        	
+            
+

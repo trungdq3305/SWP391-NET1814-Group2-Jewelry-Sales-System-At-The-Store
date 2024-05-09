@@ -1,22 +1,22 @@
-Account
+  Account
 AccountID (PK)
 Username
 Password
 Role
  
-User
-        	UserID        	(PK)
-        	AccountID  	(FK)
-        	Fullname
-        	Email
-        	PhoneNumber
-        	Yob
-        	Address
+  User
+UserID        	(PK)
+AccountID  	(FK)
+Fullname
+Email
+PhoneNumber
+Yob
+Address
  
-Product
-        	ProductID    	(PK)
+  Product
+ProductID    	(PK)
 WarrantyID 	(FK)
-        	ProductName
+ProductName
 Type
 Category
 Product
@@ -25,42 +25,38 @@ Color
 Purity
 Description
  
-Price
-        	ProductID    	(FK)
-        	PriceTypeID	(FK)
+  Price
+ProductID    	(FK)
+PriceTypeID	(FK)
         	
  
-PriceType    	
-        	PriceTypeID	(PK)
-        	PriceName
+  PriceType    	
+PriceTypeID	(PK)
+PriceName
 PriceNumber
         	
-Waranty
-        	WarrantyID 	(PK)
-        	ManufacturedDay
-        	ExpiredDay
-        	
-Promotion
-        	PromotionID   (PK)
+  Waranty
+WarrantyID 	(PK)
 ManufacturedDay
-        	ExpiredDay
-        	Type
+ExpiredDay
+        	
+  Promotion
+PromotionID   (PK)
+ManufacturedDay
+ExpiredDay
+Type
         	
  
-Customer
-        	CustomerID 	(PK)
-        	CustomerName
-        	YOB
-        	Address
-        	PhoneNumber
-        	MembershipID
+  Customer
+CustomerID 	(PK)
+CustomerName
+YOB
+Address
+PhoneNumber
+MembershipID
  
- 
- 
- 
- 
-Cashier
+  Cashier
 CashierID    	
-        	UserID        	
+UserID        	
             
 
